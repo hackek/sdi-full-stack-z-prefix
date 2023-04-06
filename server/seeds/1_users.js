@@ -16,4 +16,7 @@ exports.seed = async function(knex) {
     {id: 3, FirstName: `Snuffy`, LastName: `Wuffy`, Username: `sw3456`, Password: `3456`}
   ]);
 
+  // Sets the ID for inserts to be that of the current seed
+  await knex.raw('SELECT setval(\'users_id_seq\', (SELECT MAX(id) from "users"));');
+
 };
