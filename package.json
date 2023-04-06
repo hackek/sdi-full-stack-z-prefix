@@ -1,0 +1,20 @@
+{
+  "name": "sdi-full-stack-z-prefix",
+  "version": "1.0.0",
+  "description": "## Table of Contents 1. [Usage](#usage) 2. [Installation](#installation) 3. [Features](#features) 3. [Database](#features) 3. [Server](#features) 3. [Client](#features) 4. [Contributions](#contributions)",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd server && npm install && cd ../client && npm install && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackek/sdi-full-stack-z-prefix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackek/sdi-full-stack-z-prefix/issues"
+  },
+  "homepage": "https://github.com/hackek/sdi-full-stack-z-prefix#readme"
+}

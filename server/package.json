@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/app.js",
+    "dev": "nodemon ./src/app.js",
     "clean-db": "npx knex migrate:rollback && npx knex migrate:latest && npx knex seed:run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
