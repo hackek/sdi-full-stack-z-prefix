@@ -6,18 +6,19 @@
 module.exports = {
 
   development: {
-    client: 'pg',
+    client: 'postgresql',
     connection: {
       host: '127.0.0.1',
       user: 'postgres',
       password: 'docker',
       port: 5432,
-      database: 'pokemon_exchange'
+      database: 'pokemon_exchange',
+      charset: 'utf8'
     }
   },
 
   staging: {
-    client: 'pg',
+    client: 'postgresql',
     connection: {
       database: 'my_db',
       user:     'username',
@@ -33,7 +34,7 @@ module.exports = {
   },
 
   production: {
-    client: 'pg',
+    client: 'postgresql',
     connection: {
       database: 'my_db',
       user:     'username',
