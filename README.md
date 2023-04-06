@@ -191,6 +191,6 @@ $ npm start
 The Pokemon Exchange is brought to you by The Sorcerer's Guild, where you too can learn to wield the wonders of magic:
 * **Arcanum** @ https://github.com/Harkerfield/sdi-blended-project2-scaffold
 
-### Code Authors
-To see more paragons of programming, check out the project contributors:
+### Code Author
+To see more paragons of programming, check out the project contributor:
 * **Kyle Hackett** @ https://github.com/hackek
