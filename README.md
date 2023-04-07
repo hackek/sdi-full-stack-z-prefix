@@ -59,23 +59,38 @@ $ npm start
 
 ### Home - localhost://3000/
 > Authenticated Users can see all items
+> Authenticated Users can toggle between viewing all items or only their items
+> Authenticated Users can create a new item, redirecting to Newitem
 > Visitors can see all items
 > Displayed items have descriptions limited to 100 characters, followed by "..."
 > All Users can select an item to view in detail, redirecting to Detail
 > All Users can select the login/logout button, redirecting to Login
+> All Users can select the website title, redirecting to Home
 
 ### Login - localhost://3000/login
 > Users are required to input all required information for successful authentication
 > Users who have an existing account will be logged in upon authentication
 > Users who do not have an existing account will have one made using the provided information and logged in
 > All users when successfully logged in will be redirected to Home
+> All Users can select the website title, redirecting to Home
 
 ### Detail - localhost://3000/detail/:id
 
 > All Users can view the item name, description, and quantity
-> User Item Owners can edit the item
-> User Item Owners can delete the item
-> All Users can select the login/logout button, redirecting to Login
+> User Item Owners can edit the item and once complete are redirected to that item's Detail
+> User Item Owners while editing have the item characteristics prefilled with the existing data
+> User Item Owners while editing will have their suggested changes saved throughout the session
+> User Item Owners can delete the item, and are redirected to Hom
+> All Users can select the login button, redirecting to Login
+> All Users can select the website title, redirecting to Home
+---
+<br>
+
+### Newitem - localhost://3000/newitem
+> Only accessible to authenticated users
+> Upon submitting their new item, users are redirected to Home
+> All Users can select the login button, redirecting to Login
+> All Users can select the website title, redirecting to Home
 ---
 <br>
 
@@ -98,8 +113,8 @@ $ npm start
 
 ## Server
 
-### CREATE ITEM - POST /
-    (SESSION COOKIE VALIDATION)
+### CREATE ITEM - POST /NEWITEM
+    (SESSION VALIDATION)
     FROM FRONT END
     {
       "UserId":       sessionUserId,
@@ -110,7 +125,7 @@ $ npm start
     INSERT INTO items
 
 ### EDIT ITEM - PATCH /DETAIL/:ID
-    (SESSION COOKIE VALIDATION)
+    (SESSION VALIDATION)
     FROM FRONT END
     {
       "UserId":       sessionUserId,
@@ -122,7 +137,7 @@ $ npm start
 
 
 ### DELETE ITEM - DEL /DETAIL/:ID
-    (SESSION COOKIE VALIDATION)
+    (SESSION VALIDATION)
     FROM FRONT END
 
     DELETE INTO items
@@ -130,7 +145,7 @@ $ npm start
 ### CREATE USER - POST /LOGIN
     (NEW USER CREATION)
     (EXISTING USER AUTHENTICATION)
-    (SESSION COOKIE UPDATE)
+    (SESSION UPDATE)
     FROM FRONT END
     {
       "FirstName":  FirstName,
@@ -148,7 +163,7 @@ $ npm start
 ## Client
 
 ### LOGIN PAGE - localhost://CLIENT_PORT/LOGIN
-    (SESSION COOKIE RECEIVED)
+    (SESSION RECEIVED)
     POST - req.body
     {
       "FirstName": FirstName,
@@ -178,6 +193,17 @@ $ npm start
     GET "id" items - res
     [{
       "id":           id,
+      "UserId":       sessionUserId,
+      "ItemName":     ItemName,
+      "Description":  Description,
+      "Quantity":     Quantity
+    }]
+---
+<br>
+
+#### ITEM CREATION - localhost://CLIENT_PORT/NEWITEM
+    POST - req
+    [{
       "UserId":       sessionUserId,
       "ItemName":     ItemName,
       "Description":  Description,

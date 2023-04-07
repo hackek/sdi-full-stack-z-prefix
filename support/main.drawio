@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="yGKFn3D03RFovCp2P05H" name="Visitor View">
-        <mxGraphModel dx="852" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="869" dy="235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -12,15 +12,16 @@
                         <mxGeometry x="380" y="340" width="30" height="30" as="geometry"/>
                     </mxCell>
                 </object>
-                <mxCell id="pDI6ZPoX4qIVBJIhAqDQ-3" value="" style="edgeStyle=isometricEdgeStyle;html=1;strokeColor=#66FCF1;elbow=vertical;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="1" source="XhQDC6N8RoV4bCvyvq7E-25" edge="1">
+                <mxCell id="pDI6ZPoX4qIVBJIhAqDQ-3" value="" style="edgeStyle=isometricEdgeStyle;html=1;strokeColor=#66FCF1;elbow=vertical;exitX=0.812;exitY=1.062;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.139;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="XhQDC6N8RoV4bCvyvq7E-55" edge="1" target="XhQDC6N8RoV4bCvyvq7E-1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="540" y="340" as="targetPoint"/>
+                        <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="pDI6ZPoX4qIVBJIhAqDQ-15" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;strokeColor=#66FCF1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="XhQDC6N8RoV4bCvyvq7E-25" target="pDI6ZPoX4qIVBJIhAqDQ-5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="XhQDC6N8RoV4bCvyvq7E-25" value="Nav Bar (Login) (Home)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
+                <mxCell id="XhQDC6N8RoV4bCvyvq7E-25" value="Nav Bar (Login)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
                     <mxGeometry x="340" y="310" width="190" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="XhQDC6N8RoV4bCvyvq7E-70" style="edgeStyle=none;html=1;strokeColor=#66FCF1;" parent="1" source="XhQDC6N8RoV4bCvyvq7E-26" edge="1">
@@ -214,7 +215,7 @@
                 <mxCell id="XhQDC6N8RoV4bCvyvq7E-71" value="" style="whiteSpace=wrap;html=1;fillColor=#0B0C10;" parent="1" vertex="1">
                     <mxGeometry x="610" y="335" width="205" height="280" as="geometry"/>
                 </mxCell>
-                <mxCell id="XhQDC6N8RoV4bCvyvq7E-72" value="Nav Bar (Login) (Home)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
+                <mxCell id="XhQDC6N8RoV4bCvyvq7E-72" value="Nav Bar (Login)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
                     <mxGeometry x="616.25" y="375" width="190" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="XhQDC6N8RoV4bCvyvq7E-73" value="The Pokemon Exchange" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#66FCF1;" parent="1" vertex="1">
@@ -243,7 +244,7 @@
                 <mxCell id="pDI6ZPoX4qIVBJIhAqDQ-5" value="" style="whiteSpace=wrap;html=1;fillColor=#0B0C10;" parent="1" vertex="1">
                     <mxGeometry x="80" y="350" width="205" height="280" as="geometry"/>
                 </mxCell>
-                <mxCell id="pDI6ZPoX4qIVBJIhAqDQ-6" value="Nav Bar (Login) (Home)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
+                <mxCell id="pDI6ZPoX4qIVBJIhAqDQ-6" value="Nav Bar (Login)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
                     <mxGeometry x="86.25" y="390" width="190" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="pDI6ZPoX4qIVBJIhAqDQ-7" value="The Pokemon Exchange" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#66FCF1;" parent="1" vertex="1">
@@ -286,7 +287,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="kSnwPJumVlJChaEkjxa4" name="User View">
-        <mxGraphModel dx="852" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="869" dy="235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -298,15 +299,26 @@
                         <mxGeometry x="380" y="340" width="30" height="30" as="geometry"/>
                     </mxCell>
                 </object>
-                <mxCell id="kf3U5FdoiFHYD40asA9v-3" value="" style="edgeStyle=isometricEdgeStyle;html=1;strokeColor=#66FCF1;elbow=vertical;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="1" source="kf3U5FdoiFHYD40asA9v-5" edge="1">
+                <mxCell id="kf3U5FdoiFHYD40asA9v-3" value="" style="edgeStyle=isometricEdgeStyle;html=1;strokeColor=#66FCF1;elbow=vertical;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1.016;entryY=0.146;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="kf3U5FdoiFHYD40asA9v-31" edge="1" target="kf3U5FdoiFHYD40asA9v-1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="540" y="340.0000000000001" as="targetPoint"/>
+                        <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="kf3U5FdoiFHYD40asA9v-4" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;strokeColor=#66FCF1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="kf3U5FdoiFHYD40asA9v-5" target="kf3U5FdoiFHYD40asA9v-51" edge="1">
+                <mxCell id="kf3U5FdoiFHYD40asA9v-4" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;strokeColor=#66FCF1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.317;exitY=1.416;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="kf3U5FdoiFHYD40asA9v-5" target="kf3U5FdoiFHYD40asA9v-51" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="kf3U5FdoiFHYD40asA9v-5" value="Nav Bar (Login) (Home)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
+                <mxCell id="-0_yFZOOQrnlFLZT6RDd-25" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;entryX=1.002;entryY=0.145;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="kf3U5FdoiFHYD40asA9v-5" target="-0_yFZOOQrnlFLZT6RDd-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="580" y="315"/>
+                            <mxPoint x="580" y="140"/>
+                            <mxPoint x="308" y="140"/>
+                            <mxPoint x="308" y="51"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kf3U5FdoiFHYD40asA9v-5" value="Nav Bar (Login) (View) (New Item)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
                     <mxGeometry x="340" y="310" width="190" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="kf3U5FdoiFHYD40asA9v-6" style="edgeStyle=none;html=1;strokeColor=#66FCF1;" parent="1" source="kf3U5FdoiFHYD40asA9v-7" edge="1">
@@ -500,7 +512,7 @@
                 <mxCell id="kf3U5FdoiFHYD40asA9v-44" value="" style="whiteSpace=wrap;html=1;fillColor=#0B0C10;" parent="1" vertex="1">
                     <mxGeometry x="610" y="335" width="205" height="280" as="geometry"/>
                 </mxCell>
-                <mxCell id="kf3U5FdoiFHYD40asA9v-45" value="Nav Bar (Login) (Home)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
+                <mxCell id="kf3U5FdoiFHYD40asA9v-45" value="Nav Bar (Login) (New Item)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
                     <mxGeometry x="616.25" y="375" width="190" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="kf3U5FdoiFHYD40asA9v-46" value="The Pokemon Exchange" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#66FCF1;" parent="1" vertex="1">
@@ -529,7 +541,7 @@
                 <mxCell id="kf3U5FdoiFHYD40asA9v-51" value="" style="whiteSpace=wrap;html=1;fillColor=#0B0C10;" parent="1" vertex="1">
                     <mxGeometry x="80" y="350" width="205" height="280" as="geometry"/>
                 </mxCell>
-                <mxCell id="kf3U5FdoiFHYD40asA9v-52" value="Nav Bar (Login) (Home)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
+                <mxCell id="kf3U5FdoiFHYD40asA9v-52" value="Nav Bar (Login) (New Item)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" parent="1" vertex="1">
                     <mxGeometry x="86.25" y="390" width="190" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="kf3U5FdoiFHYD40asA9v-53" value="The Pokemon Exchange" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#66FCF1;" parent="1" vertex="1">
@@ -576,12 +588,91 @@
                         <mxGeometry x="618.75" y="580" width="91.25" height="20" as="geometry"/>
                     </mxCell>
                 </object>
-                <mxCell id="kf3U5FdoiFHYD40asA9v-64" style="edgeStyle=elbowEdgeStyle;html=1;entryX=0.616;entryY=1.001;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#66FCF1;" parent="1" source="kf3U5FdoiFHYD40asA9v-62" target="kf3U5FdoiFHYD40asA9v-44" edge="1">
+                <mxCell id="-0_yFZOOQrnlFLZT6RDd-19" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="kf3U5FdoiFHYD40asA9v-62" target="-0_yFZOOQrnlFLZT6RDd-10">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <object label="Edit" id="kf3U5FdoiFHYD40asA9v-62">
                     <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" parent="1" vertex="1">
                         <mxGeometry x="720" y="580" width="88.75" height="20" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="-0_yFZOOQrnlFLZT6RDd-1" value="" style="whiteSpace=wrap;html=1;fillColor=#0B0C10;" vertex="1" parent="1">
+                    <mxGeometry x="71.25" y="10" width="205" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="-0_yFZOOQrnlFLZT6RDd-2" value="Nav Bar (Login) (New Item)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" vertex="1" parent="1">
+                    <mxGeometry x="77.5" y="50" width="190" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="-0_yFZOOQrnlFLZT6RDd-3" value="The Pokemon Exchange" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#66FCF1;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="20" width="190" height="20" as="geometry"/>
+                </mxCell>
+                <object label="" id="-0_yFZOOQrnlFLZT6RDd-4">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="80" y="70" width="191.25" height="180" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="First Name" id="-0_yFZOOQrnlFLZT6RDd-5">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="91.25" y="80" width="160" height="20" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="-0_yFZOOQrnlFLZT6RDd-27" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;entryX=0.007;entryY=0.107;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-0_yFZOOQrnlFLZT6RDd-6" target="kf3U5FdoiFHYD40asA9v-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object label="Submit" id="-0_yFZOOQrnlFLZT6RDd-6">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="92.5" y="260" width="160" height="20" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="Last Name" id="-0_yFZOOQrnlFLZT6RDd-7">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="92.5" y="115" width="160" height="20" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="Username" id="-0_yFZOOQrnlFLZT6RDd-8">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="91.25" y="155" width="160" height="20" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="Password" id="-0_yFZOOQrnlFLZT6RDd-9">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="91.25" y="190" width="160" height="20" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="-0_yFZOOQrnlFLZT6RDd-10" value="" style="whiteSpace=wrap;html=1;fillColor=#0B0C10;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="30" width="205" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="-0_yFZOOQrnlFLZT6RDd-11" value="Nav Bar (Login) (New Item)" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#45A29E;" vertex="1" parent="1">
+                    <mxGeometry x="636.25" y="70" width="190" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="-0_yFZOOQrnlFLZT6RDd-12" value="The Pokemon Exchange" style="whiteSpace=wrap;html=1;fillColor=#1F2833;strokeColor=#66FCF1;" vertex="1" parent="1">
+                    <mxGeometry x="638.75" y="40" width="190" height="20" as="geometry"/>
+                </mxCell>
+                <object label="" id="-0_yFZOOQrnlFLZT6RDd-13">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="638.75" y="90" width="191.25" height="180" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="-0_yFZOOQrnlFLZT6RDd-24" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;" edge="1" parent="1" source="-0_yFZOOQrnlFLZT6RDd-15" target="kf3U5FdoiFHYD40asA9v-44">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object label="Submit" id="-0_yFZOOQrnlFLZT6RDd-15">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="651.25" y="280" width="160" height="20" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="Item Name" id="-0_yFZOOQrnlFLZT6RDd-20">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="655" y="115" width="160" height="20" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="Item Description" id="-0_yFZOOQrnlFLZT6RDd-21">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="655" y="145" width="160" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="Item Quantity" id="-0_yFZOOQrnlFLZT6RDd-22">
+                    <mxCell style="whiteSpace=wrap;html=1;strokeColor=#45A29E;fillColor=#1F2833;" vertex="1" parent="1">
+                        <mxGeometry x="655" y="225" width="160" height="20" as="geometry"/>
                     </mxCell>
                 </object>
             </root>
