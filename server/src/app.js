@@ -116,12 +116,12 @@ app.patch('/detail/:id', async(req, res) => {
 
 // POST Requests:
 // Create a new item
-app.post('/', async (req, res) => {
+app.post('/newitem', async (req, res) => {
   await knex('items')
     .insert(req.body)
-    .then(data => {
-      res.redirect('/')
-    })
+    .then(data =>
+      res.status(200).json(data)
+    )
     .catch(err =>
       res.status(404).json(err)
     );

@@ -46,33 +46,10 @@ function Detail() {
     const name = event.target.name;
     const value = event.target.value
     setInputs(values => ({...values, [name]: value }))
-    // console.log(inputs)
   }
 
   // Get a specific user
   const handleSubmit = async (event) => {
-    // event.preventDefault();
-    // // console.log(typeof event.target[0].value)
-    // // console.log(typeof event.target[1].value)
-    // // console.log(typeof event.target[2].value)
-    // // console.log(typeof event.target[3].value)
-    // await fetch(`http://localhost:${srvPort}/login`, {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   "Access-Control-Allow-Origin": "*",
-    //   credentials: "include",
-    //   body: JSON.stringify([{
-    //     "FirstName": event.target[0].value,
-    //     "LastName": event.target[1].value,
-    //     "Username": event.target[2].value,
-    //     "Password": event.target[3].value
-    //   }])
-    // })
-    // .then(res => res.json())
-    // .then(loggedUser => setUser(loggedUser))
-    // .catch(err => err.errorMessage)
-    // // setUser({});
-    // // console.log(user);
     event.preventDefault();
     console.log(event.target)
     console.log([{

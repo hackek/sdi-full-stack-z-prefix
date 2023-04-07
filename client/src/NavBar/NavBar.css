@@ -47,6 +47,10 @@ span {
 
 }
 
+.nav-item:hover {
+  box-shadow: 0 0 20px #66FCF1;
+}
+
 .search-input:focus {
   outline: none;
 }

@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.trainer-section {
+  height: 50rem;
+  background-image: url("../../public/Trainer.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+  background-attachment: scroll;
+}
+
+.spacer {
+  padding: 20px;
+}
+
+.viewed-items {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.single-item {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.939);
+  padding: 5px;
+  background-color: #45A29E;
+  border-color: #66FCF1;
+  border-radius: 10px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-options {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.939);
+  padding: 5px;
+  background-color: #45A29E;
+  border-color: #66FCF1;
+  border-radius: 10px;
+  min-width: 20%;
+  max-width: 30%;
+  min-height: 20%;
+  max-height: 30%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.custom-title {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.939);
+  padding: 5px;
+  background-color: #45A29E;
+  border-color: #66FCF1;
+  border-radius: 10px;
+  min-width: 90%;
+  max-width: 100%;
+  min-height: 20%;
+  max-height: 30%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.parent {
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+
+.child {
+  float: left;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.expanded-inputs {
+  width: 90%;
+  height: 20%;
+}
+
+.expanded-form {
+  width: 100%;
+  height: 100%;
+}

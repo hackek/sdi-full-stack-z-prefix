@@ -20,10 +20,6 @@ function Login() {
   // Get a specific user
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // console.log(typeof event.target[0].value)
-    // console.log(typeof event.target[1].value)
-    // console.log(typeof event.target[2].value)
-    // console.log(typeof event.target[3].value)
     await fetch(`http://localhost:${srvPort}/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -39,8 +35,6 @@ function Login() {
     .then(res => res.json())
     .then(loggedUser => setUser(loggedUser))
     .catch(err => err.errorMessage)
-    // setUser({});
-    // console.log(user);
     navigate(`/`)
   }
 

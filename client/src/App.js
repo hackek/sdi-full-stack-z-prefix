@@ -4,6 +4,7 @@ import NavBar from "./NavBar/NavBar.js";
 import Login from "./Login/Login.js"
 import Home from "./Home/Home.js";
 import Detail from "./Detail/Detail.js";
+import Newitem from "./Newitem/Newitem.js";
 import "./App.css";
 // import cookieParser from 'cookie-parser';
 
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/newitem" element={<Newitem />} />
       </Routes>
     </exchangeContext.Provider>
   );

@@ -20,9 +20,15 @@ function NavBar() {
       <nav className="nav-bar relative w-full flex items-center justify-around shadow-lg px-2">
           <div className="links relative inline-flex items-center">
 
-            <Link className="link p-3" to="/login">
+            <Link className="link p-3 nav-item" to="/login">
               <i className="ss ss-s00 p-1"/><span className="text">Login</span>
             </Link>
+            { user.hasOwnProperty('UserId') ?
+              <Link className="link p-3 nav-item" to="/newitem">
+                <i className="ss ss-s00 p-1"/><span className="text">Create New Item</span>
+              </Link> :
+              <div></div>
+            }
 
           </div>
         </nav>
