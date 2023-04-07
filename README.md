@@ -8,14 +8,9 @@
 5. [Server](#features)
 6. [Client](#features)
 7. [Contributions](#contributions)
----
-<br>
 
 ## Usage
 In a world where people train pokemon, it can be hard to find the perfect trade between trainers, that is, until the pokemon_exchange came to be! Taking a lesson from the Stock Exchange, a facsimile was created by trainers, for trainers. After a quick registration or login, Pokemon trainers can list their pokemon's name, a brief description, and how many they have available to trade.
----
----
-<br>
 
 ## Installation
 
@@ -67,8 +62,6 @@ $ npm run dev
 $ cd client
 $ npm start
 ```
----
-<br>
 
 ## Features
 
@@ -98,16 +91,12 @@ $ npm start
 > User Item Owners can delete the item, and are redirected to Hom
 > All Users can select the login button, redirecting to Login
 > All Users can select the website title, redirecting to Home
----
-<br>
 
 ### Newitem - localhost://3000/newitem
 > Only accessible to authenticated users
 > Upon submitting their new item, users are redirected to Home
 > All Users can select the login button, redirecting to Login
 > All Users can select the website title, redirecting to Home
----
-<br>
 
 ## Database
 - Users (One to many [Users to Items])
@@ -123,8 +112,6 @@ $ npm start
   > ItemName    (string)
   > Description (string)
   > Quantity    (number)
----
-<br>
 
 ## Server
 
@@ -172,8 +159,6 @@ $ npm start
 
 ### ERROR HANDLING - ALL /*
     Status(404)
----
-<br>
 
 ## Client
 
@@ -213,8 +198,6 @@ $ npm start
       "Description":  Description,
       "Quantity":     Quantity
     }]
----
-<br>
 
 #### ITEM CREATION - localhost://CLIENT_PORT/NEWITEM
     POST - req
@@ -224,8 +207,6 @@ $ npm start
       "Description":  Description,
       "Quantity":     Quantity
     }]
----
-<br>
 
 ## Contributions
 ### Sponsor
