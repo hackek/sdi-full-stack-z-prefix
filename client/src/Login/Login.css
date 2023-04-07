@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.trainer-section {
+  height: 50rem;
+  background-image: url("../../public/Trainer.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+  background-attachment: scroll;
+}
+
+.textBox {
+  color:black
+}

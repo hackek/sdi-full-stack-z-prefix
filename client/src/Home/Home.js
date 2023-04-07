@@ -4,7 +4,7 @@ import { exchangeContext } from "../App.js";
 import "./Home.css";
 
 function Home() {
-  const { srvPort, user, setUser, currItems, setItems } =
+  const { srvPort, user, setUser, currItems, setItems, currItem, setItem } =
     React.useContext(exchangeContext);
   const navigate = useNavigate();
 
@@ -23,7 +23,17 @@ function Home() {
               <div className="grid spacer">
                 {currItems.map(item => {
                   return (
-                    <div key={item.id} className="rounded-2x1 transform hover:scale-150 transition-all single-item" onClick={() => navigate(`/detail/${item.id}`)}>
+                    <div key={item.id} className="rounded-2x1 transform hover:scale-150 transition-all single-item" onClick={() => {
+                      setItem({
+                        Id: item.id,
+                        UserId: item.UserId,
+                        ItemName: item.ItemName,
+                        Description: item.Description,
+                        Quantity: item.Quantity
+                      })
+                      navigate(`/detail/${item.id}`);
+                      }
+                    }>
                       <div className="item-property">{item.ItemName}</div>
                       <br/>
                       {item.Description.length > 100 ?

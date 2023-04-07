@@ -130,9 +130,14 @@ app.post('/', (req, res) => {
 // Create a user account
 app.post('/login', async (req, res) => {
   // Take the input username and password from the user's submission
-  const { FirstName, LastName, Username, Password } = req.body;
+  // console.log(req.body);
+  const { FirstName, LastName, Username, Password } = req.body[0];
+  // console.log(FirstName);
+  // console.log(LastName);
+  // console.log(Username);
+  // console.log(Password);
   // Return an error if either the username or password were not filled out at all
-  if (FirstName == undefined || LastName == undefined || Username == undefined || Password == undefined) {
+  if (FirstName === "" || LastName === "" || Username === "" || Password === "") {
     return res.status(401).json({
       error: "Missing Name or Username or Password"
     });
@@ -150,13 +155,15 @@ app.post('/login', async (req, res) => {
       UserId: newestId,
       Username: req.body.Username
     };
+    // console.log("New User Logged In");
   }
   else {
     // create session cookie
-    req.session.user = {
+    req.session.user = await {
       UserId: data[0].id,
       Username: data[0].Username
     };
+    // console.log("Existing User Logged In");
   }
   // Be it a new user or an existing one logging back in, the user is redirected to the homepage
   res.json(req.session.user);

@@ -9,9 +9,10 @@ import "./App.css";
 export const exchangeContext = React.createContext();
 
 function App() {
-  const [srvPort] = useState(3001);
+  const [srvPort, setSrvPort] = useState(3001);
   const [user, setUser] = useState({});
   const [currItems, setItems] = useState([]);
+  const [currItem, setItem] = useState({});
 
   useEffect(() => {
     fetch(`http://localhost:${srvPort}/`)
@@ -20,7 +21,7 @@ function App() {
   }, [])
 
   return (
-    <exchangeContext.Provider value={ {srvPort, user, setUser, currItems, setItems} }>
+    <exchangeContext.Provider value={ {srvPort, user, setUser, currItems, setItems, currItem, setItem} }>
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
