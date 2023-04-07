@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.trainer-section {
+  height: 50rem;
+  background-image: url("../../public/Trainer.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+  background-attachment: scroll;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+  grid-auto-rows: 250px;
+
+}
+
+.single-item {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.939);
+    padding: 5px;
+    background-color: #45A29E;
+    border-color: #66FCF1;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.single-item:hover {
+  box-shadow: 0 0 20px #66FCF1;
+}
+
+.item-property {
+  text-align: center;
+}
+
+.total {
+  text-align: center;
+  background-color: #45A29E;
+  border-color: #66FCF1;
+  border-radius: 10px;
+}
+.spacer {
+  padding: 20px;
+}

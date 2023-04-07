@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/hackek/sdi-full-stack-z-prefix/issues"
   },
-  "homepage": "https://github.com/hackek/sdi-full-stack-z-prefix#readme"
+  "homepage": "https://github.com/hackek/sdi-full-stack-z-prefix#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "react-router-dom": "^6.10.0"
+  }
 }

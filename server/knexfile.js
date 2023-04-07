@@ -10,8 +10,8 @@ module.exports = {
     connection: {
       host: '127.0.0.1',
       user: 'postgres',
-      password: 'docker',
-      port: 5432,
+      password: 'postgrespw',
+      port: 32768,
       database: 'pokemon_exchange',
       charset: 'utf8'
     }

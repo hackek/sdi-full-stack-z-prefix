@@ -25,7 +25,14 @@ const session = require("express-session");
 const cookieParser = require('cookie-parser')
 const app = express();
 const port = 3001;
-const knex = require('knex')(require('../knexfile.js')["development"])
+const knex = require('knex')(require('../knexfile.js')["development"]);
+const cors=require("cors");
+
+app.use(cors({
+  origin: "http://localhost:3000",
+  methods: ["POST", "PATCH", "GET", "OPTIONS", "HEAD", "DELETE"],
+  credentials: true
+})) // Use this after the variable declaration
 
 app.use(session({
   name: "current_session",
