@@ -4,9 +4,9 @@
 1. [Usage](#usage)
 2. [Installation](#installation)
 3. [Features](#features)
-4. [Database](#features)
-5. [Server](#features)
-6. [Client](#features)
+4. [Database](#database)
+5. [Server](#server)
+6. [Client](#client)
 7. [Contributions](#contributions)
 
 ## Usage
@@ -65,7 +65,7 @@ $ npm start
 
 ## Features
 
-### Home - localhost://3000/
+### Home - localhost:3000/
 > Authenticated Users can see all items
 > Authenticated Users can toggle between viewing all items or only their items
 > Authenticated Users can create a new item, redirecting to Newitem
@@ -75,14 +75,14 @@ $ npm start
 > All Users can select the login/logout button, redirecting to Login
 > All Users can select the website title, redirecting to Home
 
-### Login - localhost://3000/login
+### Login - localhost:3000/login
 > Users are required to input all required information for successful authentication
 > Users who have an existing account will be logged in upon authentication
 > Users who do not have an existing account will have one made using the provided information and logged in
 > All users when successfully logged in will be redirected to Home
 > All Users can select the website title, redirecting to Home
 
-### Detail - localhost://3000/detail/:id
+### Detail - localhost:3000/detail/:id
 
 > All Users can view the item name, description, and quantity
 > User Item Owners can edit the item and once complete are redirected to that item's Detail
@@ -92,7 +92,7 @@ $ npm start
 > All Users can select the login button, redirecting to Login
 > All Users can select the website title, redirecting to Home
 
-### Newitem - localhost://3000/newitem
+### Newitem - localhost:3000/newitem
 > Only accessible to authenticated users
 > Upon submitting their new item, users are redirected to Home
 > All Users can select the login button, redirecting to Login
