@@ -23,6 +23,7 @@ function NavBar() {
             <Link className="link p-3" to="/login">
               <i className="ss ss-s00 p-1"/><span className="text">Login</span>
             </Link>
+
           </div>
         </nav>
     </div>

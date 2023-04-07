@@ -49,31 +49,31 @@ function Login() {
     <div className=" home-wrapper mt-10 ">
       <div className="trainer-section ">
         <div className="spacer">
-          <h1>Login:</h1>
+          <h1 className="custom-title">Login:</h1>
           <br/><br/>
           <form className="advancedForm" onSubmit={handleSubmit}>
 
-            <label>
+            <label className=" custom-title">
               First Name: <input className="textBox" name="firstName" value={inputs.name} type="text" onChange={handleChange} />
             </label>
             <br/><br/>
 
-            <label>
+            <label className="single-item">
               Last Name: <input className="textBox" name="lastName" value={inputs.name} type="text" onChange={handleChange} />
             </label>
             <br/><br/>
 
-            <label>
+            <label className="single-item">
               Username: <input className="textBox" name="username" value={inputs.name} type="text" onChange={handleChange}/>
             </label>
             <br/><br/>
 
-            <label>
+            <label className="single-item">
               Password: <input className="textBox" name="password" value={inputs.name} type="text" onChange={handleChange}/>
             </label>
             <br/><br/>
 
-            <input type="submit" />
+            <input className="custom-title" type="submit" />
           </form>
         </div>
       </div>

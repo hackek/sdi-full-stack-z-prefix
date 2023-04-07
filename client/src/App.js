@@ -5,6 +5,7 @@ import Login from "./Login/Login.js"
 import Home from "./Home/Home.js";
 import Detail from "./Detail/Detail.js";
 import "./App.css";
+// import cookieParser from 'cookie-parser';
 
 export const exchangeContext = React.createContext();
 

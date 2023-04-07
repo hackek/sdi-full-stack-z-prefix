@@ -12,6 +12,12 @@ function Home() {
     navigate(`/detail/${itemId}`)
   }
 
+  useEffect(() => {
+    fetch(`http://localhost:${srvPort}/`)
+    .then(res => res.json())
+    .then(items => setItems(items))
+  }, [])
+
   return (
     <div className=" home-wrapper mt-10 ">
       <div className="trainer-section ">
@@ -23,7 +29,7 @@ function Home() {
               <div className="grid spacer">
                 {currItems.map(item => {
                   return (
-                    <div key={item.id} className="rounded-2x1 transform hover:scale-150 transition-all single-item" onClick={() => {
+                    <div key={item.id} className="rounded-2x1 transform hover:scale-110 transition-all single-item" onClick={() => {
                       setItem({
                         Id: item.id,
                         UserId: item.UserId,

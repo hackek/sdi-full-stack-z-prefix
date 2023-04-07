@@ -53,8 +53,8 @@ app.use(express.json());
 
 // GET Requests:
 // Get the total list of items
-app.get('/', (req, res) => {
-  knex('items')
+app.get('/', async (req, res) => {
+  await knex('items')
     .select('*')
     .then(data =>
       res.status(200).json(data)
@@ -67,8 +67,8 @@ app.get('/', (req, res) => {
 })
 
 // Get the list of existing users
-app.get('/login', (req, res) => {
-  knex('users')
+app.get('/login', async (req, res) => {
+  await knex('users')
     .select('*')
     .then(data =>
       res.status(200).json(data)
@@ -81,8 +81,8 @@ app.get('/login', (req, res) => {
 })
 
 // Get the detailed information of an item
-app.get('/detail/:id', (req, res) => {
-  knex('items')
+app.get('/detail/:id', async (req, res) => {
+  await knex('items')
     .select('*')
     .where("id", "=", req.params.id)
     .then(data =>
@@ -99,25 +99,25 @@ app.get('/detail/:id', (req, res) => {
 
 // PATCH Requests:
 // Edit a specific item
-app.patch('/detail/:id', (req, res) => {
-  knex('items')
-  .where("id", "=", req.params.id)
+app.patch('/detail/:id', async(req, res) => {
+  console.log("You are patching!")
+  console.log(req.body)
+  await knex('items')
   .update(req.body)
+  .where("id", "=", req.params.id)
   .then(data =>
     res.status(200).json(data)
   )
   .catch(err =>
-    res.status(400).json(
-      {message: errorMessage}
-    )
+    res.status(404).json(err)
   )
 })
 
 
 // POST Requests:
 // Create a new item
-app.post('/', (req, res) => {
-  knex('items')
+app.post('/', async (req, res) => {
+  await knex('items')
     .insert(req.body)
     .then(data => {
       res.redirect('/')
@@ -166,6 +166,7 @@ app.post('/login', async (req, res) => {
     // console.log("Existing User Logged In");
   }
   // Be it a new user or an existing one logging back in, the user is redirected to the homepage
+
   res.json(req.session.user);
 })
 
@@ -173,12 +174,13 @@ app.post('/login', async (req, res) => {
 
 // DELETE Requests:
 // Delete a specific item
-app.delete('/detail/:id', (req, res) => {
-  knex('items')
-    .where("id", "=", req.params.id)
+app.delete('/detail/:id', async (req, res) => {
+  // console.log(knex('items').select('*'));
+  await knex('items')
     .del()
+    .where("id", "=", req.params.id)
     .then(data =>
-      res.redirect('/')
+      res.status(200).json(data)
     )
     .catch(err =>
       res.status(404).json(err)

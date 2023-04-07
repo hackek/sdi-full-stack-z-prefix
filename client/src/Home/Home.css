@@ -17,6 +17,7 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: end;
   grid-auto-rows: 225px;
+  justify-content: space-between;
 
 }
 
@@ -26,8 +27,8 @@
     background-color: #45A29E;
     border-color: #66FCF1;
     border-radius: 10px;
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     justify-content: space-between;
     margin-bottom: 20px;
 }
