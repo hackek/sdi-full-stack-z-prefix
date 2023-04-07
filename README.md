@@ -57,6 +57,7 @@ $ npm run dev
 * navigate from the repo's local directory to the `client` subfolder
 * run `npm start` to start up the application
 * navigate to `localhost:3000/` in your local browser to view the application
+* for a visual of website features, navigate from the local repo root to `cd support`, and view the main.drawio file
 * **NOTE:** the application by default will run on your local host at port 3000
 ```
 $ cd client
