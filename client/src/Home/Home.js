@@ -1,49 +1,53 @@
+// Get needed dependencies
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import { exchangeContext } from "../App.js";
 import "./Home.css";
 
+
+
+// Implement all functionality of the home page
 function Home() {
+
+  // Initializes useful variables
   const { srvPort, user, setUser, currItems, setItems, currItem, setItem } =
     React.useContext(exchangeContext);
   const navigate = useNavigate();
   const [toggleMine, setToggleMine] = useState(false);
 
-  const onClick = (itemId) => {
-    navigate(`/detail/${itemId}`)
-  }
-
+  // Updates the inventory when changes are made
   async function updateInventory() {
+    // Retrieves all items from the database
     fetch(`http://localhost:${srvPort}/`)
     .then(res => res.json())
     .then(items => setItems(items))
   }
 
-  // Get a specific user
+  // If a user is logged in, toggles between seeing all items and just their items
   const adjustView = async (event) => {
-    console.log(toggleMine)
+    // Stays on the same page but with the updated inventory
     setToggleMine(!toggleMine)
-    console.log(toggleMine)
     await updateInventory()
       .then(navigate(`/`))
   }
 
+  // When the home page is visited for the 1st time, load the initial items
   useEffect(() => {
+    // Retrieves all items from the database
     fetch(`http://localhost:${srvPort}/`)
     .then(res => res.json())
     .then(items => setItems(items))
   }, [])
 
+  // Allows users to view all items, loading bar appears if waiting to load, and shows additional features if logged in
   return (
     <div className=" home-wrapper mt-10 ">
       <div className="trainer-section ">
         <div className="spacer">
-        {/* toggleMine */}
           {Object.keys(currItems).length !== 0 ? (
             <div>
               {user.hasOwnProperty('UserId') ? (
                 <div>
-
                   {toggleMine ? (
                     <div>
                       <div className="total transform transition-all hover:scale-110" onClick={() => adjustView()}>Toggle Viewing All Items or User Items</div>
@@ -112,8 +116,6 @@ function Home() {
                       })}
                     </div>
                   </div>}
-
-
                 </div>
               ) :
               (
@@ -159,4 +161,7 @@ function Home() {
   )
 };
 
+
+
+// Exports the file for later user
 export default Home;

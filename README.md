@@ -31,7 +31,22 @@ $ cd ../path/to/the/local/repo
 $ npm install
 ```
 
-### The Database Server
+### The Database
+* Open the Docker Desktop application
+* If you have not already, download and run the latest postgres image
+* In the local repo's directory, type `docker ps -a` to get the container id that's running postgres.
+* Using the container ID, start postgres by typing `docker exec -it CONTAINERID bash`
+* To enter psql, type `psql -U postgres`
+* To create the database, type `CREATE DATABASE pokemon_exchange;`
+* **NOTE:** the database by default is expected to be named "pokemon_exchange". If changes to that name or other variables such as the port is needed, please navigate to `/server/knexfile.js` to change the defaults.
+```
+$ docker ps -a
+$ docker exec -it CONTAINERID bash
+$ psql -U postgres
+$ CREATE DATABASE pokemon_exchange;
+```
+
+### The Server Application
 * navigate from the repo's local directory to the `server` subfolder
 * run `npm run clean-db` to initialize and/or reset the database migrations and seed files
 * run `npm run dev` to start up the database server
@@ -43,7 +58,7 @@ $ npm run clean-db
 $ npm run dev
 ```
 
-### The User Application
+### The Client Application
 * navigate from the repo's local directory to the `client` subfolder
 * run `npm start` to start up the application
 * navigate to `localhost:3000/` in your local browser to view the application

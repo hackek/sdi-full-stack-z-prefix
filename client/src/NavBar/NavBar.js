@@ -1,13 +1,20 @@
+// Get needed dependencies
 import { Link,useNavigate } from "react-router-dom";
-import "./NavBar.css";
-import { exchangeContext } from "../App.js";
 import React from "react";
+import { exchangeContext } from "../App.js";
+import "./NavBar.css";
 
+
+
+// Implements all functionality of the navigation bar
 function NavBar() {
-  const navigate = useNavigate();
+
+  // Initializes all useful variables
   const { srvPort, user, setUser, currItems, setItems, currItem, setItem } =
     React.useContext(exchangeContext);
+  const navigate = useNavigate();
 
+  // Provides links to the home and login pages, and if a user is logged in, then also provides a link to make new items
   return (
     <div className="nav-wrapper relative flex w-full flex-wrap items-center justify-center shadow-lg center">
       <div className="brand-ribbon py-1 center">
@@ -36,4 +43,7 @@ function NavBar() {
   )
 };
 
+
+
+// Exports the file for later user
 export default NavBar;

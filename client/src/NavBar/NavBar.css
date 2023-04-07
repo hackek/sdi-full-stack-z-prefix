@@ -17,60 +17,22 @@ i {
   color: #b93b0d;
 }
 
-.deck-icon {
-  color: white;
-}
-
 span {
   color: whitesmoke;
   vertical-align:text-top;
 }
 
 .brand-logo:hover {
-  color: #ea3601;
-  text-shadow: 0 0 10px rgba(253, 108, 4, 0.9);
+  color:#45A29E;
+  text-shadow: 0 0 10px #66FCF1;
 }
 
 .links {
   margin-right: 300px;
 }
 
-.search-input {
-  background-color: #c2c2c2;
-  border: none;
-  font-size: 1em;
-  width: 300px;
-  padding-left: 10px;
-  cursor: text;
-  border-radius: 2px;
-  height: 23px;
-
-}
-
 .nav-item:hover {
   box-shadow: 0 0 20px #66FCF1;
-}
-
-.search-input:focus {
-  outline: none;
-}
-
-.search-input::placeholder {
-  color: #4c4c4c
-}
-
-.search-btn {
-  font-size: 10pt;
-  width: 88px;
-  height: 26px;
-  border: 1px solid #191919;
-  font-weight: bold;
-  color: #ffffff;
-  background-color:#191919;
-  border-radius: 2px;
-  position: relative;
-  top: -2px;
-
 }
 
 .center {

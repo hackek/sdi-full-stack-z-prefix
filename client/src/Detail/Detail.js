@@ -1,63 +1,69 @@
-import { exchangeContext } from "../App.js";
-import "./Detail.css";
+// Get needed dependencies
 import { useParams, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
+import { exchangeContext } from "../App.js";
+import "./Detail.css";
 
+
+
+// Implement all functionality of viewing a specific item
 function Detail() {
+
+  // Initialize useful variables
   const { srvPort, user, setUser, currItems, setItems, currItem, setItem } =
     React.useContext(exchangeContext);
   let params = useParams();
-  let detailedItem = currItems.find(element => element.Id === params.Id);
   const navigate = useNavigate();
-  const [isEditing, setIsEditing] = useState(false);
+  const [isEditing, setIsEditing] = useState(false); // Toogle boolean for edit mode
   const [inputs,setInputs] = useState({
     "itemName": currItem.ItemName,
     "description": currItem.Description,
     "quantity": currItem.Quantity
-  });
+  }); // Inputs for edit mode
 
+  // When an edit or deletion is submitted, handles updated the inventory
+  async function updateInventory() {
+    // Retrieves all database items
+    fetch(`http://localhost:${srvPort}/`)
+    .then(res => res.json())
+    .then(items => setItems(items))
+  }
 
-  // Get a specific user
+  // Deletes a specific item
   const deleteItem = async (event) => {
-    console.log(params.id)
+    // Deletes the current viewed item in the database
     await fetch(`http://localhost:${srvPort}/detail/${params.id}`, {
       method: "DELETE"
     })
     .then(
       currItems.filter(parseItems => parseItems.id !== params.id)
     )
-    .then(items => {
-      setItems(items)
-    })
+    .then(items => updateInventory())
     .then(setItem({}))
     .then(navigate(`/`))
     .catch(err => err.errorMessage)
   }
 
-  // Get a specific user
+  // Edits a specific item
   const editItem = async (event) => {
-    console.log(isEditing)
+    // Shows the same detailed view item in edit mode
     setIsEditing(!isEditing)
-    console.log(isEditing)
+    updateInventory()
     navigate(`/detail/${params.id}`)
   }
 
+  // Updates in real-time user changes when editing
   const handleChange = (event) => {
+    // Updates the edit fields when changes occur when editing a specific item
     const name = event.target.name;
     const value = event.target.value
     setInputs(values => ({...values, [name]: value }))
   }
 
-  // Get a specific user
+  // Resolves submitting an edit
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(event.target)
-    console.log([{
-      "UserId": currItem.UserId,
-      "ItemName": event.target[0].value,
-      "Description": event.target[1].value,
-      "Quantity": event.target[2].value
-    }])
+    // Patches the changes the user made to the item and sends to the database
     await fetch(`http://localhost:${srvPort}/detail/${params.id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
@@ -80,16 +86,13 @@ function Detail() {
     }))
     .then(editItem())
     .catch(err => err.errorMessage)
-    console.log("Submission Successful");
   }
 
 
-  //
+  // Provides users different view if they are viewing an item they made, and if they are editing that item
   return (
-
     <div className=" home-wrapper mt-10 ">
       <div className="trainer-section ">
-
           { user.hasOwnProperty('UserId') && user.UserId === currItem.UserId ?
             <div className="spacer">
               { !isEditing ?
@@ -157,4 +160,7 @@ function Detail() {
   )
 };
 
+
+
+// Exports the file for later user
 export default Detail;
